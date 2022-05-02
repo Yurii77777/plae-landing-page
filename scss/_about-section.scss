@@ -18,7 +18,11 @@
     }
 
     &__paragraph {
+        font-family: 'Yantramanav';
+        font-style: normal;
+        font-weight: 400;
         font-size: $xs-paragraph-fs;
+        line-height: 1.2;
         margin-bottom: 15px;
     }
 }
@@ -39,11 +43,40 @@
         &__content-container {
             flex: 0 0 auto;
             width: 50%;
-            padding: 30px;
+            padding: 10px 20px 10px 20px;
+        }
+
+        &__img-container {
+            width: 50%;
         }
 
         &__title {
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .about-section {
+        &__content-container {
+            padding: 60px 50px 30px 60px;
+        }
+
+        &__paragraph {
+            font-size: $sx-paragraph-fs;
+            line-height: 1.5;
+        }
+
+        &__image {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-section {
+        &__content-container {
+            padding: 120px 132px 120px 90px;
         }
     }
 }

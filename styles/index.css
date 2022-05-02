@@ -76,6 +76,7 @@ table {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .top-section {
@@ -366,7 +367,11 @@ table {
 }
 
 .about-section__paragraph {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 400;
   font-size: 1.5rem;
+  line-height: 1.2;
   margin-bottom: 15px;
 }
 
@@ -389,9 +394,31 @@ table {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 50%;
-    padding: 30px;
+    padding: 10px 20px 10px 20px;
+  }
+  .about-section__img-container {
+    width: 50%;
   }
   .about-section__title {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-section__content-container {
+    padding: 60px 50px 30px 60px;
+  }
+  .about-section__paragraph {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  .about-section__image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-section__content-container {
+    padding: 120px 132px 120px 90px;
   }
 }

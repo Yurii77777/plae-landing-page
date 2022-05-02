@@ -95,28 +95,21 @@
                     </p>
                 </div>
 
-                <picture>
-                    <source
-                        media="(max-width: 768px)"
-                        srcset="./images/about-image-mobile.webp"
-                        type="image/webp"
-                    />
-                    <source
-                        media="(min-width: 768px)"
-                        srcset="./images/about-image-tablet.webp"
-                        type="image/webp"
-                    />
-                    <source
-                        media="(min-width: 992px)"
-                        srcset="./images/about-image-desktop.webp"
-                        type="image/webp"
-                    />
+                <div class="about-section__img-container">
                     <img
-                        src="./images/about-image-tablet.webp"
+                        srcset="
+                            ./images/about-image-mobile.webp  320w,
+                            ./images/about-image-tablet.webp  480w,
+                            ./images/about-image-desktop.webp 640w
+                        "
+                        sizes="(max-width: 768px) 768px,
+                            (min-width: 768px) 496px,
+                            (min-width: 1200px) 640px"
+                        src="./images/about-image-desktop.jpg"
                         alt="Boy on a bike wearing Plae sneakers"
                         class="about-section__image"
                     />
-                </picture>
+                </div>
             </section>
         </div>
 
