@@ -1,0 +1,333 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: none;
+}
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-v23-latin-regular.eot");
+  src: local(""), url("../fonts/nunito-v23-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito-v23-latin-regular.woff2") format("woff2"), url("../fonts/nunito-v23-latin-regular.woff") format("woff"), url("../fonts/nunito-v23-latin-regular.ttf") format("truetype"), url("../fonts/nunito-v23-latin-regular.svg#Nunito") format("svg");
+}
+
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/yantramanav-v11-latin-regular.eot");
+  src: local(""), url("../fonts/yantramanav-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/yantramanav-v11-latin-regular.woff2") format("woff2"), url("../fonts/yantramanav-v11-latin-regular.woff") format("woff"), url("../fonts/yantramanav-v11-latin-regular.ttf") format("truetype"), url("../fonts/yantramanav-v11-latin-regular.svg#Yantramanav") format("svg");
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: inherit;
+  height: 100vh;
+  background-image: url("../images/background-img__mobile.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.top-section__logo {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.top-section__content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  max-width: 560px;
+}
+
+.top-section__title, .top-section__sign-up-button {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.top-section__title {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.top-section__paragraph, .top-section__label-email {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.top-section__paragraph {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.top-section__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  max-width: 477px;
+}
+
+.top-section__input-wrapper {
+  width: 70%;
+  position: relative;
+}
+
+.top-section__input-email {
+  font-size: 1.5rem;
+  height: 38px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+}
+
+.top-section__input-email.active ~ .top-section__label-email {
+  font-size: 1rem;
+  top: 27px;
+  left: 50%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.top-section__label-email {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #8c8c8c;
+  position: absolute;
+  top: 11px;
+  left: 15px;
+}
+
+.top-section__sign-up-button {
+  font-size: 1.5rem;
+  width: 30%;
+  color: #fff;
+  background-color: #20ab50;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+
+.top-section__sign-up-button:focus, .top-section__sign-up-button:active, .top-section__sign-up-button:hover {
+  background-color: #116f32;
+}
+
+.top-section__navigation-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 38%;
+  right: 3%;
+}
+
+.top-section__navigation-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.top-section__navigation-dot.active {
+  width: 11px;
+  height: 11px;
+}
+
+@media (min-width: 576px) {
+  .top-section {
+    background-image: url("../images/background-img__tablet.webp");
+  }
+  .top-section__logo {
+    top: 15px;
+    left: 20px;
+  }
+  .top-section__title {
+    font-size: 4rem;
+  }
+  .top-section__paragraph {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+  .top-section__input-email {
+    height: 40px;
+  }
+  .top-section__input-email.active ~ .top-section__label-email {
+    left: 65%;
+  }
+  .top-section__label-email {
+    top: 12px;
+  }
+  .top-section__sign-up-button {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-section__title {
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+  .top-section__paragraph {
+    font-size: 1.9rem;
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
+  .top-section__input-email {
+    font-size: 1.9rem;
+    height: 46px;
+    padding: 15px 0 15px 30px;
+  }
+  .top-section__label-email {
+    font-size: 1.9rem;
+    left: 30px;
+    top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-section {
+    background-image: url("../images/background-img__descktop.webp");
+  }
+  .top-section__logo {
+    top: 32px;
+    left: 34px;
+  }
+  .top-section__title {
+    font-size: 6rem;
+    margin-bottom: 45px;
+  }
+  .top-section__paragraph {
+    font-size: 2rem;
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-section__navigation-dots {
+    right: 7%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .top-section__navigation-dots {
+    right: 10%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .top-section__navigation-dots {
+    right: 15%;
+  }
+}

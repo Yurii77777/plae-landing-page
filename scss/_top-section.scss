@@ -1,0 +1,245 @@
+.top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 100vh;
+    background-image: url('../images/background-img__mobile.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: $primary-txt-clr;
+
+    &__logo {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    &__content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        max-width: 560px;
+    }
+
+    &__title,
+    &__sign-up-button {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    &__title {
+        font-size: $xs-title-fs;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    &__paragraph,
+    &__label-email {
+        font-family: 'Yantramanav';
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    &__paragraph {
+        font-size: $xs-paragraph-fs;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 477px;
+    }
+
+    &__input-wrapper {
+        width: 70%;
+        position: relative;
+    }
+
+    &__input-email {
+        font-size: $xs-paragraph-fs;
+        height: 38px;
+        width: 100%;
+        border-top-left-radius: $primary-border-radius;
+        border-bottom-left-radius: $primary-border-radius;
+        border: none;
+        outline: none;
+        padding: 5px 15px;
+    }
+
+    &__input-email.active ~ &__label-email {
+        font-size: 1rem;
+        top: 27px;
+        left: 50%;
+        transition: all 0.2s ease;
+    }
+
+    &__label-email {
+        font-size: $xs-paragraph-fs;
+        letter-spacing: 1px;
+        color: $primary-label-clr;
+        position: absolute;
+        top: 11px;
+        left: 15px;
+    }
+
+    &__sign-up-button {
+        font-size: $xs-paragraph-fs;
+        width: 30%;
+        color: $primary-txt-clr;
+        background-color: $primary-button-bg-clr;
+        border: none;
+        border-top-right-radius: $primary-border-radius;
+        border-bottom-right-radius: $primary-border-radius;
+        cursor: pointer;
+    }
+
+    &__sign-up-button:focus,
+    &__sign-up-button:active,
+    &__sign-up-button:hover {
+        background-color: $primary-button-bg-clr-hover;
+    }
+
+    &__navigation-dots {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 38%;
+        right: 3%;
+    }
+
+    &__navigation-dot {
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: $primary-nav-dot-bg-color;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    &__navigation-dot.active {
+        width: 11px;
+        height: 11px;
+    }
+}
+
+@media (min-width: 576px) {
+    .top-section {
+        background-image: url('../images/background-img__tablet.webp');
+
+        &__logo {
+            top: 15px;
+            left: 20px;
+        }
+
+        &__title {
+            font-size: $s-title-fs;
+        }
+
+        &__paragraph {
+            font-size: $s-paragraph-fs;
+            margin-bottom: 40px;
+        }
+
+        &__input-email {
+            height: 40px;
+        }
+
+        &__input-email.active ~ &__label-email {
+            left: 65%;
+        }
+
+        &__label-email {
+            top: 12px;
+        }
+
+        &__sign-up-button {
+            font-size: $s-paragraph-fs;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .top-section {
+        &__title {
+            font-size: $sm-title-fs;
+            margin-bottom: 30px;
+        }
+
+        &__paragraph {
+            font-size: $sm-paragraph-fs;
+            line-height: 1.5;
+            margin-bottom: 50px;
+        }
+
+        &__input-email {
+            font-size: $sm-paragraph-fs;
+            height: 46px;
+            padding: 15px 0 15px 30px;
+        }
+
+        &__label-email {
+            font-size: $sm-paragraph-fs;
+            left: 30px;
+            top: 15px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .top-section {
+        background-image: url('../images/background-img__descktop.webp');
+
+        &__logo {
+            top: 32px;
+            left: 34px;
+        }
+
+        &__title {
+            font-size: $m-title-fs;
+            margin-bottom: 45px;
+        }
+
+        &__paragraph {
+            font-size: $m-paragraph-fs;
+            margin-bottom: 62px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .top-section {
+        &__navigation-dots {
+            right: 7%;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .top-section {
+        &__navigation-dots {
+            right: 10%;
+        }
+    }
+}
+
+@media (min-resolution: 2dppx) {
+    .top-section {
+        &__navigation-dots {
+            right: 15%;
+        }
+    }
+}
