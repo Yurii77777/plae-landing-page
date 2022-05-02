@@ -1,0 +1,49 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content-container {
+        padding: 25px;
+    }
+
+    &__title {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $xs-title-fs;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__paragraph {
+        font-size: $xs-paragraph-fs;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 576px) {
+    .about-section {
+        &__content-container {
+            padding: 40px;
+            overflow: hidden;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .about-section {
+        flex-direction: row;
+
+        &__content-container {
+            flex: 0 0 auto;
+            width: 50%;
+            padding: 30px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+}

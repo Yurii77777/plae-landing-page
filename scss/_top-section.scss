@@ -38,6 +38,7 @@
         font-size: $xs-title-fs;
         letter-spacing: 2px;
         margin-bottom: 20px;
+        text-shadow: 4px 3px 10px $primary-shadow-color;
     }
 
     &__paragraph,
@@ -52,6 +53,7 @@
         text-align: center;
         line-height: 1.2;
         margin-bottom: 30px;
+        text-shadow: 4px 3px 10px $primary-shadow-color;
     }
 
     &__form {
@@ -128,6 +130,7 @@
         border-radius: 50%;
         margin-bottom: 20px;
         cursor: pointer;
+        box-shadow: 1px 2px 5px $primary-shadow-color;
     }
 
     &__navigation-dot.active {
@@ -236,7 +239,7 @@
     }
 }
 
-@media (min-resolution: 2dppx) {
+@media (min-width: 1600px) {
     .top-section {
         &__navigation-dots {
             right: 15%;
