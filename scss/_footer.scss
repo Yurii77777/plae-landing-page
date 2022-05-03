@@ -1,0 +1,173 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $primary-footer-bg-clr;
+    padding: 20px 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: "Nunito";
+        font-size: $xxxs-title-fs;
+    }
+
+    &__title,
+    &__paragraph {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    &__paragraph {
+        font-family: "Yantramanav";
+        font-size: $s-paragraph-fs;
+        line-height: 1.2;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        max-width: 477px;
+        margin-bottom: 20px;
+    }
+
+    &__input-wrapper {
+        width: 70%;
+        position: relative;
+    }
+
+    &__input-email {
+        font-size: $xs-paragraph-fs;
+        height: 38px;
+        width: 100%;
+        border-top-left-radius: $primary-border-radius;
+        border-bottom-left-radius: $primary-border-radius;
+        border: none;
+        outline: none;
+        padding: 5px 15px;
+    }
+
+    &__input-email.active ~ &__label-email {
+        font-size: 1rem;
+        top: 27px;
+        left: 45%;
+        transition: all 0.2s ease;
+    }
+
+    &__label-email {
+        font-family: 'Yantramanav';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $xs-paragraph-fs;
+        letter-spacing: 1px;
+        color: $primary-label-clr;
+        position: absolute;
+        top: 11px;
+        left: 30px;
+    }
+
+    &__sign-up-button {
+        font-size: $xs-paragraph-fs;
+        width: 30%;
+        color: $primary-txt-clr;
+        background-color: $primary-button-bg-clr;
+        border: none;
+        border-top-right-radius: $primary-border-radius;
+        border-bottom-right-radius: $primary-border-radius;
+        cursor: pointer;
+    }
+
+    &__sign-up-button:focus,
+    &__sign-up-button:active,
+    &__sign-up-button:hover {
+        background-color: $primary-button-bg-clr-hover;
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Yantramanav';
+        font-size: $xxs-paragraph-fs;
+        background-color: $primary-copyright-bg-clr;
+        color: $primary-copyright-clr;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer {
+        &__input-email {
+            height: 40px;
+        }
+
+        &__input-email.active ~ &__label-email {
+            left: 65%;
+        }
+
+        &__label-email {
+            top: 12px;
+        }
+
+        &__sign-up-button {
+            font-size: $s-paragraph-fs;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        height: 300px;
+        padding: 40px 0 0 0;
+
+        &__container {
+            flex: 1 1 auto;
+        }
+
+        &__form {
+            margin-bottom: 70px;
+        }
+
+        &__input-email {
+            font-size: $sm-paragraph-fs;
+            height: 46px;
+            padding: 15px 0 15px 30px;
+        }
+
+        &__label-email {
+            font-size: $sm-paragraph-fs;
+            left: 30px;
+            top: 15px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        height: 445px;
+        padding-top: 140px;
+
+        &__title {
+            font-size: $xs-title-fs;
+        }
+
+        &__paragraph {
+            font-size: $ml-paragraph-fs;
+        }
+
+        &__form {
+            margin-bottom: 110px;
+        }
+
+        &__copyright {
+            height: 40px;
+            padding: 10px 25px;
+        }
+    }
+}

@@ -185,7 +185,7 @@ table {
 .top-section__input-email.active ~ .top-section__label-email {
   font-size: 1rem;
   top: 27px;
-  left: 50%;
+  left: 45%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -196,7 +196,7 @@ table {
   color: #8c8c8c;
   position: absolute;
   top: 11px;
-  left: 15px;
+  left: 30px;
 }
 
 .top-section__sign-up-button {
@@ -1109,5 +1109,194 @@ table {
   }
   .addresses-section__compliment-contacts {
     margin-bottom: 80px;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 20px 0;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__title {
+  font-family: "Nunito";
+  font-size: 2.4rem;
+}
+
+.footer__title, .footer__paragraph {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer__paragraph {
+  font-family: "Yantramanav";
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  max-width: 477px;
+  margin-bottom: 20px;
+}
+
+.footer__input-wrapper {
+  width: 70%;
+  position: relative;
+}
+
+.footer__input-email {
+  font-size: 1.5rem;
+  height: 38px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+}
+
+.footer__input-email.active ~ .footer__label-email {
+  font-size: 1rem;
+  top: 27px;
+  left: 45%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer__label-email {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #8c8c8c;
+  position: absolute;
+  top: 11px;
+  left: 30px;
+}
+
+.footer__sign-up-button {
+  font-size: 1.5rem;
+  width: 30%;
+  color: #fff;
+  background-color: #20ab50;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+
+.footer__sign-up-button:focus, .footer__sign-up-button:active, .footer__sign-up-button:hover {
+  background-color: #116f32;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Yantramanav';
+  font-size: 1.4rem;
+  background-color: #dcdcdc;
+  color: #fff;
+  padding: 10px;
+}
+
+@media (min-width: 576px) {
+  .footer__input-email {
+    height: 40px;
+  }
+  .footer__input-email.active ~ .footer__label-email {
+    left: 65%;
+  }
+  .footer__label-email {
+    top: 12px;
+  }
+  .footer__sign-up-button {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 300px;
+    padding: 40px 0 0 0;
+  }
+  .footer__container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .footer__form {
+    margin-bottom: 70px;
+  }
+  .footer__input-email {
+    font-size: 1.9rem;
+    height: 46px;
+    padding: 15px 0 15px 30px;
+  }
+  .footer__label-email {
+    font-size: 1.9rem;
+    left: 30px;
+    top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    height: 445px;
+    padding-top: 140px;
+  }
+  .footer__title {
+    font-size: 3rem;
+  }
+  .footer__paragraph {
+    font-size: 2.2rem;
+  }
+  .footer__form {
+    margin-bottom: 110px;
+  }
+  .footer__copyright {
+    height: 40px;
+    padding: 10px 25px;
   }
 }

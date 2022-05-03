@@ -82,7 +82,7 @@
     &__input-email.active ~ &__label-email {
         font-size: 1rem;
         top: 27px;
-        left: 50%;
+        left: 45%;
         transition: all 0.2s ease;
     }
 
@@ -92,7 +92,7 @@
         color: $primary-label-clr;
         position: absolute;
         top: 11px;
-        left: 15px;
+        left: 30px;
     }
 
     &__sign-up-button {
