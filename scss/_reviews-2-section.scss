@@ -1,4 +1,4 @@
-.reviews-section {
+.reviews-2-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,31 +9,19 @@
         overflow: hidden;
     }
 
-    &__title {
-        font-family: "Nunito";
-
-        font-size: $xxs-title-fs;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    &__title,
     &__paragraph {
+        font-family: 'Yantramanav';
+        font-size: $s-paragraph-fs;
+        line-height: 1.2;
+        margin-bottom: 15px;
         text-align: center;
         font-style: normal;
         font-weight: 400;
     }
-
-    &__paragraph {
-        font-family: "Yantramanav";
-        font-size: $s-paragraph-fs;
-        line-height: 1.2;
-        margin-bottom: 15px;
-    }
 }
 
 @media (min-width: 576px) {
-    .reviews-section {
+    .reviews-2-section {
         &__content-container {
             padding: 40px;
         }
@@ -41,29 +29,22 @@
 }
 
 @media (min-width: 768px) {
-    .reviews-section {
+    .reviews-2-section {
         flex-direction: row;
 
         &__content-container {
-            order: 2;
             flex: 0 0 auto;
             width: 50%;
         }
 
         &__img-container {
-            order: 1;
             width: 50%;
         }
     }
 }
 
 @media (min-width: 992px) {
-    .reviews-section {
-        &__title {
-            font-size: $xs-title-fs;
-            margin-bottom: 50px;
-        }
-
+    .reviews-2-section {
         &__paragraph {
             font-size: $m-paragraph-fs;
             margin-bottom: 50px;
@@ -80,7 +61,7 @@
 }
 
 @media (min-width: 1200px) {
-    .reviews-section {
+    .reviews-2-section {
         &__content-container {
             display: flex;
             flex-direction: column;
@@ -88,9 +69,8 @@
             padding: 0;
         }
 
-        &__title,
         &__paragraph {
-            width: 325px;
+            width: 290px;
         }
     }
 }
