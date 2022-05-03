@@ -1,4 +1,4 @@
-.carousel {
+.carousel-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -117,7 +117,7 @@
 }
 
 @media (min-width: 576px) {
-    .carousel {
+    .carousel-section {
         &__image {
             max-width: 466px;
         }
@@ -125,7 +125,7 @@
 }
 
 @media (min-width: 992px) {
-    .carousel {
+    .carousel-section {
         &__title {
             font-size: $xs-title-fs;
             margin: 85px 0 30px;
@@ -152,7 +152,7 @@
 }
 
 @media (min-width: 1200px) {
-    .carousel {
+    .carousel-section {
         &__prev-slide-button {
             left: 5%;
         }

@@ -1,4 +1,4 @@
-.why-plae {
+.why-plae-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@
 }
 
 @media (min-width: 576px) {
-    .why-plae {
+    .why-plae-section {
         &__left-side,
         &__rigth-side {
             padding: 0 40px;
@@ -63,7 +63,7 @@
 }
 
 @media (min-width: 768px) {
-    .why-plae {
+    .why-plae-section {
         &__left-side,
         &__rigth-side {
             display: grid;
@@ -80,7 +80,7 @@
 }
 
 @media (min-width: 992px) {
-    .why-plae {
+    .why-plae-section {
 
         &__title {
             font-size: $xs-title-fs;
@@ -121,7 +121,7 @@
 }
 
 @media (min-width: 1200px) {
-    .why-plae {
+    .why-plae-section {
         &__content-container {
             background-position: 53% 0%;
             background-size: 52% 110%;

@@ -21,7 +21,7 @@ $emailInput.addEventListener("blur", (e) => {
 // Логика для стилизации лейбла инпута e-mail END
 
 // Обработчики для слайдера (карусели) BEGIN
-const $carouselItems = document.querySelectorAll(".carousel__item");
+const $carouselItems = document.querySelectorAll(".carousel-section__item");
 
 /**
  * Функция находит индекс активного слайда,
@@ -80,15 +80,15 @@ document.addEventListener("click", (e) => {
     let userClick = e.target;
 
     if (
-        userClick.className === "carousel__next-slide-icon" ||
-        userClick.className === "carousel__next-slide-button"
+        userClick.className === "carousel-section__next-slide-icon" ||
+        userClick.className === "carousel-section__next-slide-button"
     ) {
         showNextSlide();
     }
 
     if (
-        userClick.className === "carousel__prev-slide-icon" ||
-        userClick.className === "carousel__prev-slide-button"
+        userClick.className === "carousel-section__prev-slide-icon" ||
+        userClick.className === "carousel-section__prev-slide-button"
     ) {
         showPreviousSlide();
     }
