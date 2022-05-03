@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./styles/index.css" />
     </head>
     <body>
-        <div class="wrapper">
+        <main class="wrapper">
             <section class="top-section" id="top-section">
                 <div class="top-section__logo">
                     <a
@@ -111,7 +111,38 @@
                     />
                 </div>
             </section>
-        </div>
+
+            <section class="reviews-section" id="reviews-section">
+                <div class="reviews-section__content-container">
+                    <h3 class="reviews-section__title">
+                        What our customers say
+                    </h3>
+
+                    <p class="reviews-section__paragraph">
+                        I like them because they are very comfy and soft inside.
+                        They are really light which means I run faster. I like
+                        the cool straps that I can change
+                    </p>
+                    <p class="reviews-section__paragraph">Charlie (age 8)</p>
+                </div>
+
+                <div class="reviews-section__img-container">
+                    <img
+                        srcset="
+                            ./images/reviews-image-mobile.webp  320w,
+                            ./images/reviews-image-tablet.webp  480w,
+                            ./images/reviews-image-desktop.webp 640w
+                        "
+                        sizes="(max-width: 768px) 768px,
+                            (min-width: 768px) 496px,
+                            (min-width: 1200px) 640px"
+                        src="./images/reviews-image-desktop.jpg"
+                        alt="Boy on a bike wearing Plae sneakers"
+                        class="reviews-section__image"
+                    />
+                </div>
+            </section>
+        </main>
 
         <script async src="./js/main.js"></script>
     </body>
