@@ -1,0 +1,138 @@
+.why-plae {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primary-why-section-bg-clr;
+
+    &__title {
+        font-family: "Nunito";
+        font-size: $xxs-title-fs;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    &__subtitle {
+        font-family: "Yantramanav";
+        font-size: $s-paragraph-fs;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle,
+    &__left-side,
+    &__rigth-side {
+        padding: 0 30px;
+    }
+
+    &__content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__paragraph {
+        font-family: "Yantramanav";
+        font-size: $xs-paragraph-fs;
+        line-height: 1.2;
+        background-color: $primary-why-section-paragraph-bg-clr;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    &__paragraph > span {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .why-plae {
+        &__left-side,
+        &__rigth-side {
+            padding: 0 40px;
+        }
+
+        &__paragraph {
+            padding: 25px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .why-plae {
+        &__left-side,
+        &__rigth-side {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        &__paragraph {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .why-plae {
+
+        &__title {
+            font-size: $xs-title-fs;
+            margin: 78px 0 29px;
+        }
+
+        &__content-container {
+            flex-direction: row;
+            background-image: url('../images/why-desktop-image.webp');
+            background-repeat: no-repeat;
+            background-position: 52% 0%;
+            background-size: 55% 110%;
+        }
+
+        &__left-side,
+        &__rigth-side {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+        }
+
+        &__left-side {
+            padding: 0 25px 0 40px;
+        }
+
+        &__rigth-side {
+            padding: 0 40px 0 25px;
+        }
+
+        &__paragraph {
+            padding: 12px;
+        }
+
+        &__mobile-image {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .why-plae {
+        &__content-container {
+            background-position: 53% 0%;
+            background-size: 52% 110%;
+        }
+
+        &__paragraph {
+            padding: 14px;
+        }
+
+        &__paragraph > span {
+            font-size: $sx-paragraph-fs;
+        }
+    }
+}
