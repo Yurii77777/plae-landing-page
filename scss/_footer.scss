@@ -45,26 +45,6 @@
     }
 }
 
-@media (min-width: 576px) {
-    .footer {
-        &__input-email {
-            height: 40px;
-        }
-
-        &__input-email.active ~ &__label-email {
-            left: 65%;
-        }
-
-        &__label-email {
-            top: 12px;
-        }
-
-        &__sign-up-button {
-            font-size: $s-paragraph-fs;
-        }
-    }
-}
-
 @media (min-width: 768px) {
     .footer {
         height: 300px;
@@ -76,18 +56,6 @@
 
         &__form {
             margin-bottom: 70px;
-        }
-
-        &__input-email {
-            font-size: $sm-paragraph-fs;
-            height: 46px;
-            padding: 15px 0 15px 30px;
-        }
-
-        &__label-email {
-            font-size: $sm-paragraph-fs;
-            left: 30px;
-            top: 15px;
         }
     }
 }

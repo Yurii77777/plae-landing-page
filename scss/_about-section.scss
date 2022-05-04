@@ -12,7 +12,7 @@
     &__title {
         font-family: 'Nunito';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: $xs-title-fs;
         text-align: center;
         margin-bottom: 20px;
@@ -21,37 +21,40 @@
     &__paragraph {
         font-family: 'Yantramanav';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: $xs-paragraph-fs;
+        letter-spacing: 0.7px;
         line-height: 1.2;
         margin-bottom: 15px;
-    }
-}
-
-@media (min-width: 576px) {
-    .about-section {
-        &__content-container {
-            padding: 40px;
-        }
     }
 }
 
 @media (min-width: 768px) {
     .about-section {
         flex-direction: row;
+        height: 100vh;
 
         &__content-container {
-            flex: 0 0 auto;
-            width: 50%;
-            padding: 10px 20px 10px 20px;
+            flex: 1 1 auto;
+            width: 54.7%;
+            height: 100vh;
+            padding: 100px 40px 40px 50px;
         }
 
         &__title {
             margin-bottom: 30px;
         }
 
+        &__paragraph {
+            margin-bottom: 20px;
+        }
+
         &__img-container {
-            width: 50%;
+            width: 45.3%;
+        }
+
+        &__image {
+            min-height: 100vh;
         }
     }
 }
@@ -59,16 +62,12 @@
 @media (min-width: 992px) {
     .about-section {
         &__content-container {
-            padding: 60px 50px 30px 60px;
+            padding: 116px 63px 40px 100px;
         }
 
         &__paragraph {
             font-size: $sx-paragraph-fs;
             line-height: 1.5;
-        }
-
-        &__image {
-            width: 100%;
         }
     }
 }
@@ -76,7 +75,15 @@
 @media (min-width: 1200px) {
     .about-section {
         &__content-container {
-            padding: 120px 132px 120px 90px;
+            padding: 115px 125px 40px 162px;
+        }
+
+        &__title {
+            margin: 0 0 35px 8px;
+        }
+
+        &__paragraph {
+            margin-bottom: 24px;
         }
     }
 }
