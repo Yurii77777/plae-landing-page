@@ -1,0 +1,105 @@
+.form {
+    display: flex;
+    flex-direction: row;
+    max-width: 477px;
+
+    &__input-wrapper {
+        width: 65%;
+        position: relative;
+    }
+
+    &__input-email,
+    &__label-email {
+        font-family: "Yantramanav";
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    &__input-email {
+        font-size: $xs-paragraph-fs;
+        height: 38px;
+        width: 100%;
+        border-top-left-radius: $primary-border-radius;
+        border-bottom-left-radius: $primary-border-radius;
+        border: none;
+        outline: none;
+        padding: 5px 15px;
+    }
+
+    &__input-email.active ~ &__label-email {
+        font-size: 1rem;
+        top: 27px;
+        left: 45%;
+        transition: all 0.2s ease;
+    }
+
+    &__label-email {
+        font-size: $xs-paragraph-fs;
+        letter-spacing: 1px;
+        color: $primary-label-clr;
+        position: absolute;
+        top: 11px;
+        left: 30px;
+    }
+
+    &__sign-up-button {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 400;
+        flex: 1 1 auto;
+        font-size: $xs-paragraph-fs;
+        color: $primary-txt-clr;
+        background-color: $primary-button-bg-clr;
+        border: none;
+        border-top-right-radius: $primary-border-radius;
+        border-bottom-right-radius: $primary-border-radius;
+        cursor: pointer;
+    }
+
+    &__sign-up-button:focus,
+    &__sign-up-button:active,
+    &__sign-up-button:hover {
+        background-color: $primary-button-bg-clr-hover;
+    }
+}
+
+@media (min-width: 576px) {
+    .form {
+        &__input-email {
+            height: 40px;
+        }
+
+        &__input-email.active ~ &__label-email {
+            left: 65%;
+        }
+
+        &__label-email {
+            top: 12px;
+        }
+
+        &__label-email {
+            font-size: $s-paragraph-fs;
+            left: 30px;
+            top: 15px;
+        }
+
+        &__sign-up-button {
+            font-size: $s-paragraph-fs;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .form {
+        &__input-email {
+            font-size: $sm-paragraph-fs;
+            height: 46px;
+            padding: 15px 0 15px 30px;
+        }
+
+        &__sign-up-button {
+            font-size: $m-paragraph-fs;
+            padding-right: 12px;
+        }
+    }
+}

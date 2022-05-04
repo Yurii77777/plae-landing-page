@@ -30,63 +30,8 @@
     }
 
     &__form {
-        display: flex;
-        flex-direction: row;
         width: 80%;
-        max-width: 477px;
         margin-bottom: 20px;
-    }
-
-    &__input-wrapper {
-        width: 70%;
-        position: relative;
-    }
-
-    &__input-email {
-        font-size: $xs-paragraph-fs;
-        height: 38px;
-        width: 100%;
-        border-top-left-radius: $primary-border-radius;
-        border-bottom-left-radius: $primary-border-radius;
-        border: none;
-        outline: none;
-        padding: 5px 15px;
-    }
-
-    &__input-email.active ~ &__label-email {
-        font-size: 1rem;
-        top: 27px;
-        left: 45%;
-        transition: all 0.2s ease;
-    }
-
-    &__label-email {
-        font-family: 'Yantramanav';
-        font-style: normal;
-        font-weight: 400;
-        font-size: $xs-paragraph-fs;
-        letter-spacing: 1px;
-        color: $primary-label-clr;
-        position: absolute;
-        top: 11px;
-        left: 30px;
-    }
-
-    &__sign-up-button {
-        font-size: $xs-paragraph-fs;
-        width: 30%;
-        color: $primary-txt-clr;
-        background-color: $primary-button-bg-clr;
-        border: none;
-        border-top-right-radius: $primary-border-radius;
-        border-bottom-right-radius: $primary-border-radius;
-        cursor: pointer;
-    }
-
-    &__sign-up-button:focus,
-    &__sign-up-button:active,
-    &__sign-up-button:hover {
-        background-color: $primary-button-bg-clr-hover;
     }
 
     &__copyright {
@@ -97,7 +42,6 @@
         font-size: $xxs-paragraph-fs;
         background-color: $primary-copyright-bg-clr;
         color: $primary-copyright-clr;
-        padding: 10px;
     }
 }
 
