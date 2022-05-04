@@ -27,6 +27,10 @@
          url('../fonts/yantramanav-v11-latin-regular.svg#Yantramanav') format('svg');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width: 100%;
     max-width: 1280px;

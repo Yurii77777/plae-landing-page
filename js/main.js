@@ -127,3 +127,31 @@ document.addEventListener("click", (e) => {
 //      чтобы при дальнейшем обслуживании не думать об этом
 
 // Обработчики для слайдера (карусели) END
+
+// Прокрутка страницы по нажатию на кнопки навигации nav dots BEGIN
+const $navDots = document.querySelectorAll('a[href^="#"]');
+const $dotsSpans = document.querySelectorAll(".top-section__navigation-dot");
+
+for (let element of $navDots) {
+    element.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        let userClick = e.target;
+
+        const link = element.getAttribute("href");
+
+        document.querySelector(link).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+
+        for (let span of $dotsSpans) {
+            span.classList.contains("active") &&
+                span.classList.remove("active");
+        }
+
+        userClick.classList.add("active");
+    });
+}
+
+// Прокрутка страницы по нажатию на кнопки навигации nav dots END
