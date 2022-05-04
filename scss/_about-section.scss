@@ -35,10 +35,9 @@
         height: 100vh;
 
         &__content-container {
-            flex: 1 1 auto;
             width: 54.7%;
             height: 100vh;
-            padding: 100px 40px 40px 50px;
+            padding: 116px 63px 40px 100px;
         }
 
         &__title {
@@ -61,10 +60,6 @@
 
 @media (min-width: 992px) {
     .about-section {
-        &__content-container {
-            padding: 116px 63px 40px 100px;
-        }
-
         &__paragraph {
             font-size: $sx-paragraph-fs;
             line-height: 1.5;

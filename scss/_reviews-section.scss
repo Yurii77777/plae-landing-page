@@ -5,29 +5,41 @@
     align-items: center;
 
     &__content-container {
-        padding: 25px;
+        padding: 15px;
         overflow: hidden;
     }
 
-    &__title {
+    &__title,
+    &__quotes {
         font-family: "Nunito";
+        font-weight: 300;
+    }
+
+    &__title {
         font-size: $xxs-title-fs;
         text-align: center;
+        letter-spacing: 0.4px;
         margin-bottom: 20px;
     }
 
-    &__title,
-    &__paragraph {
-        text-align: center;
-        font-style: normal;
-        font-weight: 400;
+    &__quotes {
+        font-size: $xxl-paragraph-fs;
+        color: $primary-quotes-clr;
     }
 
     &__paragraph {
         font-family: "Yantramanav";
         font-size: $s-paragraph-fs;
         line-height: 1.2;
+        text-align: center;
+        font-style: normal;
+        font-weight: 300;
         margin-bottom: 15px;
+    }
+
+    &__quotes.close {
+        text-align: end;
+        margin: -24px 0 53px 320px;
     }
 }
 
@@ -42,22 +54,46 @@
 @media (min-width: 768px) {
     .reviews-section {
         flex-direction: row;
+        height: 100vh;
 
         &__content-container {
             order: 2;
-            flex: 0 0 auto;
-            width: 50%;
+            flex: 1 1 auto;
+            width: 45.3%;
+            height: 100vh;
+            padding: 100px 40px 40px 50px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__quotes.close {
+            margin-left: 80px;
         }
 
         &__img-container {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
             order: 1;
-            width: 50%;
+            width: 54.7%;
+        }
+
+        &__image {
+            min-height: 100vh;
+            width: 93%;
+            max-width: 93%;
         }
     }
 }
 
 @media (min-width: 992px) {
     .reviews-section {
+        &__content-container {
+            padding: 170px 78px 40px 90px;
+        }
+
         &__title {
             font-size: $xs-title-fs;
             margin-bottom: 50px;
@@ -65,15 +101,14 @@
 
         &__paragraph {
             font-size: $m-paragraph-fs;
-            margin-bottom: 50px;
+        }
+
+        &__quotes.close {
+            margin-left: 120px;
         }
 
         &__paragraph:last-child {
             font-size: $s-paragraph-fs;
-        }
-
-        &__image {
-            width: 100%;
         }
     }
 }
@@ -81,15 +116,21 @@
 @media (min-width: 1200px) {
     .reviews-section {
         &__content-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0;
+            padding: 193px 79px 40px 157px;
         }
 
-        &__title,
+        &__title {
+            margin-bottom: 72px;
+        }
+
         &__paragraph {
-            width: 325px;
+            line-height: 1.45;
+            letter-spacing: 1px;
+            margin-top: -20px;
+        }
+
+        &__paragraph:last-child {
+            margin-right: 15px;
         }
     }
 }
