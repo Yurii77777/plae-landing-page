@@ -148,10 +148,12 @@
 
 @media (min-width: 1200px) {
     .top-section {
+        width: 100vw;
         min-height: 400px;
+        margin-left: calc(50% - 50vw);
 
         &__logo {
-            left: 84px;
+            left: 95px;
         }
 
         &__content-container {
@@ -176,12 +178,6 @@
             right: 3.5em;
             top: 33em;
         }
-    }
-}
-
-@media (min-width: 1400px) {
-    .top-section {
-        width: 100vw;
     }
 }
 

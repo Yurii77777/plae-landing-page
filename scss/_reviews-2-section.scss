@@ -5,18 +5,28 @@
     align-items: center;
 
     &__content-container {
-        padding: 25px;
+        padding: 15px;
         overflow: hidden;
     }
 
     &__paragraph {
-        font-family: 'Yantramanav';
+        font-family: "Yantramanav";
         font-size: $s-paragraph-fs;
         line-height: 1.2;
-        margin-bottom: 15px;
         text-align: center;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    &__quotes {
+        font-size: $xxl-paragraph-fs;
+        color: $primary-quotes-clr;
+    }
+
+    &__quotes.close {
+        text-align: end;
+        margin: -24px 0 0px 320px;
     }
 }
 
@@ -31,31 +41,58 @@
 @media (min-width: 768px) {
     .reviews-2-section {
         flex-direction: row;
+        height: 100vh;
 
         &__content-container {
-            flex: 0 0 auto;
-            width: 50%;
+            flex: 1 1 auto;
+            width: 54.7%;
+            height: 100vh;
+            padding: 200px 70px 20px 70px;
+        }
+
+        &__paragraph {
+            margin-top: -16px;
+            line-height: 1.45;
+            letter-spacing: 1px;
+            padding: 0 20px;
+        }
+
+        &__quotes.close {
+            margin-left: 110px;
         }
 
         &__img-container {
-            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            order: 1;
+            width: 45.3%;
+        }
+
+        &__image {
+            min-height: 100vh;
+            width: 100%;
+            max-width: 100%;
         }
     }
 }
 
 @media (min-width: 992px) {
     .reviews-2-section {
+        &__content-container {
+            padding: 254px 95px 10px 95px;
+        }
+
         &__paragraph {
             font-size: $m-paragraph-fs;
-            margin-bottom: 50px;
         }
 
         &__paragraph:last-child {
             font-size: $s-paragraph-fs;
         }
 
-        &__image {
-            width: 100%;
+        &__quotes.close {
+            margin-left: 120px;
         }
     }
 }
@@ -63,14 +100,16 @@
 @media (min-width: 1200px) {
     .reviews-2-section {
         &__content-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0;
+            padding: 254px 141px 10px 194px;
         }
 
         &__paragraph {
-            width: 290px;
+            margin-top: -16px;
+            padding: 0 30px;
+        }
+
+        &__paragraph:last-child {
+            margin: 33px 0 0 -18px;
         }
     }
 }
