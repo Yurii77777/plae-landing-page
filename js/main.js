@@ -138,6 +138,13 @@ for (let element of $navDots) {
 
         let userClick = e.target;
 
+        let isNavButton = userClick.classList.contains(
+            "top-section__navigation-dot"
+        );
+        let isNavLink = userClick.classList.contains(
+            "top-section__navigation-dot-link"
+        );
+
         const link = element.getAttribute("href");
 
         document.querySelector(link).scrollIntoView({
@@ -150,7 +157,8 @@ for (let element of $navDots) {
                 span.classList.remove("active");
         }
 
-        userClick.classList.add("active");
+        isNavButton && userClick.classList.add("active");
+        isNavLink && userClick.children[0].classList.add("active");
     });
 }
 
