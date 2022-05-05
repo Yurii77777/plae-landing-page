@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: $primary-footer-bg-clr;
-    padding: 20px 0;
+    padding-top: 30px;
 
     &__container {
         display: flex;
@@ -15,6 +15,8 @@
     &__title {
         font-family: "Nunito";
         font-size: $xxxs-title-fs;
+        font-weight: 300;
+        letter-spacing: 0.7px;
     }
 
     &__title,
@@ -40,8 +42,11 @@
         align-items: center;
         font-family: 'Yantramanav';
         font-size: $xxs-paragraph-fs;
+        text-align: center;
         background-color: $primary-copyright-bg-clr;
         color: $primary-copyright-clr;
+        height: 30px;
+        padding: 5px 20px;
     }
 }
 
@@ -57,29 +62,37 @@
         &__form {
             margin-bottom: 70px;
         }
+
+        &__copyright {
+            height: 30px;
+            padding: 5px 20px;
+        }
     }
 }
 
 @media (min-width: 992px) {
     .footer {
-        height: 445px;
-        padding-top: 140px;
+        height: 455px;
+        padding-top: 103px;
 
         &__title {
             font-size: $xs-title-fs;
+            margin: 37px 0 0 120px;
         }
 
         &__paragraph {
             font-size: $ml-paragraph-fs;
+            margin: 0 0 34px 124px;
         }
 
         &__form {
-            margin-bottom: 110px;
+            margin: 0 0 112px 137px;
         }
 
         &__copyright {
             height: 40px;
             padding: 10px 25px;
+            text-align: start;
         }
     }
 }
