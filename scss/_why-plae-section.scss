@@ -4,10 +4,15 @@
     align-items: center;
     background-color: $primary-why-section-bg-clr;
 
+    &__title,
+    &__subtitle {
+        font-weight: 300;
+        text-align: center;
+    }
+
     &__title {
         font-family: "Nunito";
         font-size: $xxs-title-fs;
-        text-align: center;
         margin: 20px 0;
     }
 
@@ -15,14 +20,7 @@
         font-family: "Yantramanav";
         font-size: $s-paragraph-fs;
         line-height: 1.2;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    &__subtitle,
-    &__left-side,
-    &__rigth-side {
-        padding: 0 30px;
+        
     }
 
     &__content-container {
@@ -30,35 +28,24 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        padding: 0 25px;
     }
 
     &__paragraph {
         font-family: "Yantramanav";
         font-size: $xs-paragraph-fs;
-        line-height: 1.2;
+        font-weight: 300;
+        line-height: 1.33;
         background-color: $primary-why-section-paragraph-bg-clr;
         border-radius: 10px;
         margin-bottom: 15px;
-        padding: 15px;
+        padding: 16px 16px 12px 17px;
     }
 
     &__paragraph > span {
         display: block;
         font-weight: 700;
-        margin-bottom: 10px;
-    }
-}
-
-@media (min-width: 576px) {
-    .why-plae-section {
-        &__left-side,
-        &__rigth-side {
-            padding: 0 40px;
-        }
-
-        &__paragraph {
-            padding: 25px;
-        }
+        margin-bottom: 3px;
     }
 }
 
@@ -81,37 +68,28 @@
 
 @media (min-width: 992px) {
     .why-plae-section {
+        width: 100vw;
+        height: 100vh;
 
         &__title {
             font-size: $xs-title-fs;
-            margin: 78px 0 29px;
+            margin: 38px 0 20px;
         }
 
         &__content-container {
             flex-direction: row;
             background-image: url('../images/why-desktop-image.webp');
             background-repeat: no-repeat;
-            background-position: 52% 0%;
-            background-size: 55% 110%;
+            width: 900px;
+            background-position: 53% 0%;
+            background-size: 57% 110%;
         }
 
         &__left-side,
         &__rigth-side {
             display: flex;
             flex-direction: column;
-            width: 30%;
-        }
-
-        &__left-side {
-            padding: 0 25px 0 40px;
-        }
-
-        &__rigth-side {
-            padding: 0 40px 0 25px;
-        }
-
-        &__paragraph {
-            padding: 12px;
+            width: 25%;
         }
 
         &__mobile-image {
@@ -122,13 +100,27 @@
 
 @media (min-width: 1200px) {
     .why-plae-section {
-        &__content-container {
-            background-position: 53% 0%;
-            background-size: 52% 110%;
+        margin-left: calc(50% - 50vw);
+
+        &__title {
+            margin: 43px 0 20px 144px;
         }
 
-        &__paragraph {
-            padding: 14px;
+        &__subtitle {
+            margin-left: 150px;
+        }
+
+        &__content-container {
+            width: 1160px;
+            padding: 0;
+            margin-left: 114px;
+            background-position: 58% -14%;
+            background-size: 71% 110%;
+        }
+
+        &__left-side,
+        &__rigth-side {
+            width: 20%;
         }
 
         &__paragraph > span {
