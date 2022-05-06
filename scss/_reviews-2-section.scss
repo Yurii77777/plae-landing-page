@@ -20,13 +20,21 @@
     }
 
     &__quotes {
+        font-family: "Nunito";
+        font-weight: 300;
         font-size: $xxl-paragraph-fs;
         color: $primary-quotes-clr;
     }
 
     &__quotes.close {
         text-align: end;
-        margin: -24px 0 0px 320px;
+        margin: 40px 0 53px 297px;
+    }
+
+    &__image {
+        width: 100%;
+        max-height: 802px;
+        height: 802px;
     }
 }
 
@@ -41,13 +49,12 @@
 @media (min-width: 768px) {
     .reviews-2-section {
         flex-direction: row;
-        height: 100vh;
 
         &__content-container {
             flex: 1 1 auto;
             width: 54.7%;
             height: 100vh;
-            padding: 200px 70px 20px 70px;
+            padding: 90px 63px 40px 80px;
         }
 
         &__paragraph {
@@ -58,7 +65,7 @@
         }
 
         &__quotes.close {
-            margin-left: 110px;
+            margin: 35px 0 0px 225px;
         }
 
         &__img-container {
@@ -67,12 +74,6 @@
             align-items: end;
             order: 1;
             width: 45.3%;
-        }
-
-        &__image {
-            min-height: 100vh;
-            width: 100%;
-            max-width: 100%;
         }
     }
 }
@@ -91,8 +92,8 @@
             font-size: $s-paragraph-fs;
         }
 
-        &__quotes.close {
-            margin-left: 120px;
+        &__quotes {
+            margin-top: 8px;
         }
     }
 }
@@ -100,16 +101,20 @@
 @media (min-width: 1200px) {
     .reviews-2-section {
         &__content-container {
-            padding: 254px 141px 10px 194px;
+            padding: 259px 125px 10px 175px;
         }
 
         &__paragraph {
-            margin-top: -16px;
-            padding: 0 30px;
+            margin-top: -25px;
+            padding: 0px 45px;
         }
 
         &__paragraph:last-child {
-            margin: 33px 0 0 -18px;
+            margin: -9px 0 0 -17px;
+        }
+
+        &__quotes.close {
+            margin-left: 324px;
         }
     }
 }

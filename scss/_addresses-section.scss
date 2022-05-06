@@ -124,20 +124,15 @@
         &__store-address {
             line-height: 1.3;
         }
-
-        &__compliment-contacts {
-            margin-bottom: 30px;
-        }
     }
 }
 
 @media (min-width: 992px) {
     .addresses-section {
-        height: 100vh;
 
         &__title {
             font-size: $xs-title-fs;
-            margin: 54px 0px 19px 106px;
+            margin: 91px 0px 19px 108px;
         }
 
         &__subtitle {
@@ -166,16 +161,12 @@
         &__compliment-email {
             margin-bottom: 0;
         }
-
-        &__compliment-contacts {
-            margin-bottom: 50px;
-        }
     }
 }
 
 @media (min-width: 1200px) {
     .addresses-section {
-        margin-bottom: 207px;
+        margin-bottom: 65px;
 
         &__stores-addresses {
             grid-row-gap: 50px;
@@ -202,10 +193,6 @@
 
         &__compliment-paragraph {
             margin: 0 0 48px 29px;
-        }
-
-        &__compliment-contacts {
-            margin-bottom: 80px;
         }
 
         &__compliment-email {

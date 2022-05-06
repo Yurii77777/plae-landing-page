@@ -14,7 +14,6 @@
     &__title {
         font-size: $xxs-title-fs;
         text-align: center;
-        // margin: 20px 0;
     }
 
     &__subtitle {
@@ -22,8 +21,6 @@
         font-size: $s-paragraph-fs;
         line-height: 1.2;
         text-align: center;
-        // padding: 0 25px;
-        // margin-bottom: 15px;
     }
 
     &__list {
@@ -145,11 +142,10 @@
 
 @media (min-width: 768px) {
     .carousel-section {
-        height: 100vh;
 
         &__title {
             font-size: $xs-title-fs;
-            margin: 76px 0 17px 145px;
+            margin: 80px 0 17px 144px;
         }
 
         &__subtitle {
@@ -171,7 +167,7 @@
 
         &__prev-slide-button,
         &__next-slide-button {
-            top: 29.6em;
+            top: 30em;
         }
 
         &__prev-slide-button {

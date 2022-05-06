@@ -39,7 +39,13 @@
 
     &__quotes.close {
         text-align: end;
-        margin: -24px 0 53px 320px;
+        margin: 40px 0 53px 297px;
+    }
+
+    &__image {
+        width: 100%;
+        max-height: 800px;
+        height: 800px;
     }
 }
 
@@ -54,22 +60,17 @@
 @media (min-width: 768px) {
     .reviews-section {
         flex-direction: row;
-        height: 100vh;
 
         &__content-container {
             order: 2;
             flex: 1 1 auto;
             width: 45.3%;
             height: 100vh;
-            padding: 100px 40px 40px 50px;
+            padding: 90px 63px 40px 80px;
         }
 
         &__title {
             margin-bottom: 30px;
-        }
-
-        &__quotes.close {
-            margin-left: 80px;
         }
 
         &__img-container {
@@ -81,9 +82,12 @@
         }
 
         &__image {
-            min-height: 100vh;
             width: 93%;
             max-width: 93%;
+        }
+
+        &__quotes.close {
+            margin: 60px 0 53px 160px;
         }
     }
 }
@@ -103,12 +107,12 @@
             font-size: $m-paragraph-fs;
         }
 
-        &__quotes.close {
-            margin-left: 120px;
-        }
-
         &__paragraph:last-child {
             font-size: $s-paragraph-fs;
+        }
+
+        &__quotes.close {
+            margin: -24px 0 53px 250px;
         }
     }
 }
@@ -116,7 +120,7 @@
 @media (min-width: 1200px) {
     .reviews-section {
         &__content-container {
-            padding: 193px 79px 40px 157px;
+            padding: 198px 79px 40px 160px;
         }
 
         &__title {
@@ -130,7 +134,15 @@
         }
 
         &__paragraph:last-child {
-            margin-right: 15px;
+            margin-right: 24px;
+        }
+
+        &__quotes {
+            margin-left: -30px;
+        }
+
+        &__quotes.close {
+            margin-left: 297px;
         }
     }
 }

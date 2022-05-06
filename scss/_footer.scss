@@ -43,6 +43,7 @@
         font-family: 'Yantramanav';
         font-size: $xxs-paragraph-fs;
         text-align: center;
+        letter-spacing: 0.5px;
         background-color: $primary-copyright-bg-clr;
         color: $primary-copyright-clr;
         height: 30px;
@@ -72,26 +73,28 @@
 
 @media (min-width: 992px) {
     .footer {
-        height: 455px;
+        width: 100vw;
+        height: 448px;
         padding-top: 103px;
+        margin-left: calc(50% - 50vw);
 
         &__title {
             font-size: $xs-title-fs;
-            margin: 37px 0 0 120px;
+            margin: 29px 0 -8px 120px;
         }
 
         &__paragraph {
             font-size: $ml-paragraph-fs;
-            margin: 0 0 34px 124px;
+            margin: 0 0 22px 124px;
         }
 
         &__form {
-            margin: 0 0 112px 137px;
+            margin: 0 0 117px 137px;
         }
 
         &__copyright {
             height: 40px;
-            padding: 10px 25px;
+            padding: 10px 7em;
             text-align: start;
         }
     }

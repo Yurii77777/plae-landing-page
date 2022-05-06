@@ -5,6 +5,7 @@
     align-items: center;
 
     &__content-container {
+        height: auto;
         padding: 25px;
         overflow: hidden;
     }
@@ -27,17 +28,21 @@
         line-height: 1.2;
         margin-bottom: 15px;
     }
+
+    &__image {
+        width: 100%;
+        max-height: 797px;
+        height: 797px;
+    }
 }
 
 @media (min-width: 768px) {
     .about-section {
         flex-direction: row;
-        height: 100vh;
 
         &__content-container {
             width: 54.7%;
-            height: 100vh;
-            padding: 116px 63px 40px 100px;
+            padding: 90px 63px 40px 80px;
         }
 
         &__title {
@@ -50,10 +55,6 @@
 
         &__img-container {
             width: 45.3%;
-        }
-
-        &__image {
-            min-height: 100vh;
         }
     }
 }
@@ -70,7 +71,7 @@
 @media (min-width: 1200px) {
     .about-section {
         &__content-container {
-            padding: 115px 125px 40px 162px;
+            padding: 69px 125px 40px 162px;
         }
 
         &__title {
