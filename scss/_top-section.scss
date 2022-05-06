@@ -28,12 +28,6 @@
         max-width: 560px;
         height: 200px;
     }
-
-    &__title {
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 400;
-    }
     
     &__paragraph {
         font-family: 'Yantramanav';
@@ -111,6 +105,10 @@
 @media (min-width: 992px) {
     .top-section {
         background-image: url('../images/background-img__desktop.webp');
+
+        &__title {
+            margin: 14px 0 0 -6px;
+        }
 
         &__logo {
             top: 32px;
