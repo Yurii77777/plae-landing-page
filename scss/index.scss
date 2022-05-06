@@ -70,7 +70,8 @@ body {
 }
 
 .wrapper {
-    width: 100%;
+    // width: 100%;
+    width: 95%;
     min-width: 320px;
     max-width: 1280px;
     margin: 0 auto;
@@ -79,6 +80,7 @@ body {
 
 @media (min-width: 992px) {
     .wrapper {
+        width: 100%;
         overflow: visible;
     }
 }
