@@ -134,3 +134,12 @@
         }
     }
 }
+
+@media (min-width: 1400px) {
+    .reviews-section {
+        &__image {
+            width: 88%;
+            max-width: 88%;
+        }
+    }
+}
