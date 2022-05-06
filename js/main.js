@@ -163,3 +163,54 @@ for (let element of $navDots) {
 }
 
 // Прокрутка страницы по нажатию на кнопки навигации nav dots END
+
+// Отследить позицию пользователя на странице
+// и выделить необходимую точку навигации BEGIN
+const $topSection = document.getElementById("top-section");
+const $aboutSection = document.getElementById("about-section");
+const $reviewsSection = document.getElementById("reviews-section");
+const $carouselSection = document.getElementById("carousel-section");
+const $whyPlaeSection = document.getElementById("why-plae-section");
+const $addressesSection = document.getElementById("addresses-section");
+
+const elementInViewport = (el) => {
+    const bounds = el.getBoundingClientRect();
+    let isVisible = (bounds.top / window.innerHeight) * 100 < 50;
+
+    return isVisible;
+};
+
+const handleNavDotInViewport = (element) => {
+    for (let span of $dotsSpans) {
+        span.classList.contains("active") && span.classList.remove("active");
+    }
+
+    element.classList.add("active");
+};
+
+window.addEventListener("scroll", (e) => {
+    const isTopSectioninViewport = elementInViewport($topSection);
+    const isAboutSectioninViewport = elementInViewport($aboutSection);
+    const isReviewsSectioninViewport = elementInViewport($reviewsSection);
+    const isCarouselSectioninViewport = elementInViewport($carouselSection);
+    const isWhyPlaeSectioninViewport = elementInViewport($whyPlaeSection);
+    const isAddressesSectioninViewport = elementInViewport($addressesSection);
+
+    const $topSectionSpan = $dotsSpans[0];
+    const $aboutSectionSpan = $dotsSpans[1];
+    const $reviewsSectionSpan = $dotsSpans[2];
+    const $carouselSectionSpan = $dotsSpans[3];
+    const $whyPlaeSectionSpan = $dotsSpans[4];
+    const $addressesSectionSpan = $dotsSpans[5];
+
+    isTopSectioninViewport && handleNavDotInViewport($topSectionSpan);
+    isAboutSectioninViewport && handleNavDotInViewport($aboutSectionSpan);
+    isReviewsSectioninViewport && handleNavDotInViewport($reviewsSectionSpan);
+    isCarouselSectioninViewport && handleNavDotInViewport($carouselSectionSpan);
+    isWhyPlaeSectioninViewport && handleNavDotInViewport($whyPlaeSectionSpan);
+    isAddressesSectioninViewport &&
+        handleNavDotInViewport($addressesSectionSpan);
+});
+
+// Отследить позицию пользователя на странице
+// и выделить необходимую точку навигации END
