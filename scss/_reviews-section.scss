@@ -9,14 +9,12 @@
         overflow: hidden;
     }
 
-    &__title,
     &__quotes {
         font-family: "Nunito";
         font-weight: 300;
     }
 
     &__title {
-        font-size: $xxs-title-fs;
         text-align: center;
         letter-spacing: 0.4px;
         margin-bottom: 20px;
@@ -99,7 +97,6 @@
         }
 
         &__title {
-            font-size: $xs-title-fs;
             margin-bottom: 50px;
         }
 

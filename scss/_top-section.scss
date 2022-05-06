@@ -35,13 +35,6 @@
         font-weight: 400;
     }
     
-    &__title {
-        font-size: $xs-title-fs;
-        font-weight: 300;
-        letter-spacing: 0.5px;
-        text-shadow: 4px 3px 10px $primary-shadow-color;
-    }
-
     &__paragraph {
         font-family: 'Yantramanav';
         font-weight: 300;
@@ -95,10 +88,6 @@
             left: 20px;
         }
 
-        &__title {
-            font-size: $s-title-fs;
-        }
-
         &__paragraph {
             font-size: $s-paragraph-fs;
         }
@@ -110,10 +99,6 @@
 
         &__content-container {
             height: 250px;
-        }
-
-        &__title {
-            font-size: $sm-title-fs;
         }
 
         &__paragraph {
@@ -136,10 +121,6 @@
             height: 270px;
         }
 
-        &__title {
-            font-size: $m-title-fs;
-        }
-
         &__paragraph {
             font-size: $m-paragraph-fs;
         }
@@ -157,12 +138,7 @@
         }
 
         &__content-container {
-            // Похоже, что на макете этот блок не по центру экрана
             margin-left: 120px;
-        }
-
-        &__title {
-            padding-top: 11px;
         }
 
         &__paragraph {

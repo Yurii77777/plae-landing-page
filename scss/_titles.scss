@@ -1,0 +1,39 @@
+.primary-title,
+.secondary-title {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 300;
+}
+
+.primary-title {
+    font-size: $xs-title-fs;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-shadow: 4px 3px 10px $primary-shadow-color;
+}
+
+.secondary-title {
+    font-size: $xxs-title-fs;
+}
+
+@media (min-width: 576px) {
+    .primary-title {
+        font-size: $s-title-fs;
+    }
+}
+
+@media (min-width: 768px) {
+    .primary-title {
+        font-size: $sm-title-fs;
+    }
+}
+
+@media (min-width: 992px) {
+    .primary-title {
+        font-size: $m-title-fs;
+    }
+
+    .secondary-title {
+        font-size: $xs-title-fs;
+    }
+}

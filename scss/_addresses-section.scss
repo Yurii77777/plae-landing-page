@@ -4,9 +4,6 @@
     align-items: center;
 
     &__title {
-        font-family: "Nunito";
-        font-size: $xxs-title-fs;
-        font-weight: 300;
         text-align: center;
         letter-spacing: 0.5px;
         margin: 20px 0;
@@ -131,7 +128,6 @@
     .addresses-section {
 
         &__title {
-            font-size: $xs-title-fs;
             margin: 91px 0px 19px 108px;
         }
 
