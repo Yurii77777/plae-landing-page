@@ -63,11 +63,9 @@ html {
 }
 
 body {
-    width: 95%;
-    // width: 100%;
-    // max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
     overflow-x: hidden;
-    margin: 0 auto;
 }
 
 .wrapper {
@@ -80,7 +78,6 @@ body {
 
 @media (min-width: 992px) {
     .wrapper {
-        width: 100%;
         overflow: visible;
     }
 }
