@@ -130,20 +130,11 @@ document.addEventListener("click", (e) => {
 
 // Прокрутка страницы по нажатию на кнопки навигации nav dots BEGIN
 const $navDots = document.querySelectorAll('a[href^="#"]');
-const $dotsSpans = document.querySelectorAll(".top-section__navigation-dot");
+const $dotsSpans = document.querySelectorAll(".navigation-dots__dot");
 
 for (let element of $navDots) {
     element.addEventListener("click", (e) => {
         e.preventDefault();
-
-        let userClick = e.target;
-
-        let isNavButton = userClick.classList.contains(
-            "top-section__navigation-dot"
-        );
-        let isNavLink = userClick.classList.contains(
-            "top-section__navigation-dot-link"
-        );
 
         const link = element.getAttribute("href");
 
@@ -151,14 +142,6 @@ for (let element of $navDots) {
             behavior: "smooth",
             block: "start",
         });
-
-        for (let span of $dotsSpans) {
-            span.classList.contains("active") &&
-                span.classList.remove("active");
-        }
-
-        isNavButton && userClick.classList.add("active");
-        isNavLink && userClick.children[0].classList.add("active");
     });
 }
 

@@ -1,0 +1,24 @@
+.navigation-dots {
+    @include flex-column-spc-btwn;
+    position: fixed;
+    top: 41%;
+    right: 2.5%;
+    z-index: 2;
+
+    &__dot {
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: $primary-nav-dot-bg-color;
+        border-radius: 50%;
+        margin-bottom: 18px;
+        cursor: pointer;
+        box-shadow: 1px 2px 5px $primary-shadow-color;
+    }
+
+    &__dot.active {
+        width: 14px;
+        height: 14px;
+        background-color: $primary-button-bg-clr;
+    }
+}

@@ -1,5 +1,6 @@
 @import "./reset";
 @import "./settings";
+@import "./mixins";
 
 @font-face {
     font-family: "Nunito";
@@ -63,6 +64,8 @@ html {
 }
 
 body {
+    font-family: 'Yantramanav';
+    font-weight: 300;
     overflow-x: hidden;
 }
 
@@ -90,4 +93,6 @@ body {
 @import "./footer";
 
 @import "./titles";
+@import "./paragraph";
 @import "./form";
+@import "./navigation-dots";

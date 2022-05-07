@@ -6,34 +6,14 @@
 }
 
 .primary-title {
-    font-size: $xs-title-fs;
-    font-weight: 300;
+    // Размер минимального шрифта
+    // + разница между максимальным и минимальным размером шрифта
+    // умноженная на соотношение ширины view-порта к ширине макета
+    font-size: calc(30px + 30 * (100vw / 1280));
     letter-spacing: 0.5px;
     text-shadow: 4px 3px 10px $primary-shadow-color;
 }
 
 .secondary-title {
-    font-size: $xxs-title-fs;
-}
-
-@media (min-width: 576px) {
-    .primary-title {
-        font-size: $s-title-fs;
-    }
-}
-
-@media (min-width: 768px) {
-    .primary-title {
-        font-size: $sm-title-fs;
-    }
-}
-
-@media (min-width: 992px) {
-    .primary-title {
-        font-size: $m-title-fs;
-    }
-
-    .secondary-title {
-        font-size: $xs-title-fs;
-    }
+    font-size: calc(24px + 6 * (100vw / 1280));
 }
