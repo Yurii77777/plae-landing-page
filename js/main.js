@@ -1,53 +1,5 @@
 "use strict";
 
-// Логика для стилизации лейблов инпутов e-mail BEGIN
-/**
- * Функция добавляет или удаляет класс "active",
- * в зависимости от того, есть ли данный класс сейчас
- * в переданном HTML узле
- * @param {HTMLnode} $node
- */
-const handleActiveClassNames = ($node) => {
-    !$node[0].classList.contains("active")
-        ? $node[0].classList.add("active")
-        : $node[0].classList.add("active");
-};
-
-const $emailInput = document.querySelectorAll(".top-section__input-email");
-
-$emailInput[0].addEventListener("focus", (e) => {
-    e.stopPropagation();
-
-    handleActiveClassNames($emailInput);
-});
-
-$emailInput[0].addEventListener("blur", (e) => {
-    e.stopPropagation();
-
-    const emailInputValue = e.target.value;
-    let isEmailInputEmpty = emailInputValue === "" || !emailInputValue;
-
-    isEmailInputEmpty && $emailInput[0].classList.remove("active");
-});
-
-const $footerEmailInput = document.querySelectorAll(".footer__input-email");
-
-$footerEmailInput[0].addEventListener("focus", (e) => {
-    e.stopPropagation();
-
-    handleActiveClassNames($footerEmailInput);
-});
-
-$footerEmailInput[0].addEventListener("blur", (e) => {
-    e.stopPropagation();
-
-    const emailInputValue = e.target.value;
-    let isEmailInputEmpty = emailInputValue === "" || !emailInputValue;
-
-    isEmailInputEmpty && $footerEmailInput[0].classList.remove("active");
-});
-// Логика для стилизации лейбла инпута e-mail END
-
 // Обработчики для слайдера (карусели) BEGIN
 const $carouselItems = document.querySelectorAll(".carousel-section__item");
 
