@@ -1,48 +1,40 @@
 .why-plae-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     background-color: $primary-why-section-bg-clr;
 
-    &__subtitle {
-        font-weight: 300;
-        text-align: center;
-    }
-
     &__title {
-        margin: 20px 0;
+        margin: 6% 0 1.5% 3.5%;
     }
 
     &__subtitle {
-        font-family: "Yantramanav";
-        font-size: $s-paragraph-fs;
-        line-height: 1.2;
-        
+        font-size: calc(14px + 4 * (100vw / 1280));
+        text-align: center;
+        margin: 5%;
     }
 
     &__content-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 25px;
+        @include flex-column-spc-btwn;
+        margin: -2.5% 0 0 0;
+    }
+
+    &__left-side,
+    &__rigth-side {
+        margin: 0 5%;
     }
 
     &__paragraph {
-        font-family: "Yantramanav";
         font-size: $xs-paragraph-fs;
-        font-weight: 300;
-        line-height: 1.33;
+        line-height: 1.4;
         background-color: $primary-why-section-paragraph-bg-clr;
         border-radius: 10px;
-        margin-bottom: 15px;
-        padding: 14px 16px 12px 17px;
+        margin-bottom: 5%;
+        padding: 10px 15px;
     }
 
     &__paragraph > span {
         display: block;
+        font-size: $sx-paragraph-fs;
         font-weight: 700;
-        margin-bottom: 3px;
     }
 }
 
@@ -56,10 +48,6 @@
             row-gap: 10px;
             margin-bottom: 10px;
         }
-
-        &__paragraph {
-            margin-bottom: 0;
-        }
     }
 }
 
@@ -67,25 +55,27 @@
     .why-plae-section {
         width: 100vw;
         margin-top: 84px;
+        background-image: url("../images/why-desktop-image.webp");
+        background-repeat: no-repeat;
+        background-position: 53% 134%;
+        background-size: 84% 103%;
 
-        &__title {
-            margin: 38px 0 20px;
+        &__subtitle {
+            padding: 0 0 3.3% 4%;
+            margin: 0;
         }
 
         &__content-container {
             flex-direction: row;
-            background-image: url('../images/why-desktop-image.webp');
-            background-repeat: no-repeat;
-            width: 900px;
-            background-position: 53% 0%;
-            background-size: 57% 110%;
+            align-items: flex-start;
+            width: 88%;
         }
 
         &__left-side,
         &__rigth-side {
-            display: flex;
-            flex-direction: column;
+            display: block;
             width: 25%;
+            margin: 0;
         }
 
         &__mobile-image {
@@ -96,23 +86,15 @@
 
 @media (min-width: 1200px) {
     .why-plae-section {
-        height: 800px;
+        height: 795px;
         margin-left: calc(50% - 50vw);
-
-        &__title {
-            margin: 78px 0 18px 144px;
-        }
-
-        &__subtitle {
-            margin-left: 150px;
-        }
+        background-position: 53% 0%;
+        background-size: 108% 100%;
 
         &__content-container {
-            width: 1160px;
-            padding: 0;
-            margin: 6px 0 0 114px;
-            background-position: 58% -14%;
-            background-size: 71% 110%;
+            width: 1170px;
+            height: 690px;
+            padding-left: 1%;
         }
 
         &__left-side,
@@ -120,8 +102,18 @@
             width: 20%;
         }
 
-        &__paragraph > span {
-            font-size: $sx-paragraph-fs;
+        &__rigth-side {
+            padding-top: 1.8%;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .why-plae-section {
+        background-size: 92% 100%;
+
+        &__rigth-side {
+            padding-top: 0;
         }
     }
 }
