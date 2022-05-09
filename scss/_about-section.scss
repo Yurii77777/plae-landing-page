@@ -1,81 +1,64 @@
 .about-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-column-spc-btwn;
 
     &__content-container {
-        height: auto;
-        padding: 25px;
+        @include flex-column-spc-btwn;
         overflow: hidden;
+        padding: 5% 0;
+    }
+
+    &__limiter {
+        width: 65%;
+        padding-right: 2%;
     }
 
     &__title {
         text-align: center;
-        margin-bottom: 20px;
+        padding-left: 2%;
+        margin-bottom: 9%;
     }
 
     &__paragraph {
-        font-family: 'Yantramanav';
-        font-style: normal;
-        font-weight: 300;
-        font-size: $xs-paragraph-fs;
+        font-size: calc(10px + 6 * (100vw / 1280));
         letter-spacing: 0.7px;
-        line-height: 1.2;
-        margin-bottom: 15px;
+        line-height: clamp(1.2, 1.5, 1.5);
+        margin-bottom: 6%;
+    }
+
+    &__paragraph:last-child {
+        margin-bottom: 0;
     }
 
     &__image {
         width: 100%;
-        max-height: 797px;
-        height: 797px;
+        aspect-ratio: 1/1.29;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+    .about-section {
+        &__img-container {
+            width: 100%;
+            max-width: 610px;
+        }
+    }
+}
+
+@media (min-width: 960px) {
     .about-section {
         flex-direction: row;
 
         &__content-container {
-            width: 54.7%;
-            padding: 90px 63px 40px 80px;
+            padding: 0;
         }
 
-        &__title {
-            margin-bottom: 30px;
-        }
-
-        &__paragraph {
-            margin-bottom: 20px;
+        &__content-container {
+            flex: 1 0 0;
         }
 
         &__img-container {
-            width: 45.3%;
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    .about-section {
-        &__paragraph {
-            font-size: $sx-paragraph-fs;
-            line-height: 1.5;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .about-section {
-        &__content-container {
-            padding: 69px 125px 40px 162px;
-        }
-
-        &__title {
-            margin: 0 0 35px 8px;
-        }
-
-        &__paragraph {
-            margin-bottom: 24px;
+            width: 49.2%;
+            max-width: 100%;
         }
     }
 }

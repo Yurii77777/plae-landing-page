@@ -1,8 +1,5 @@
 .reviews-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-column-spc-btwn;
 
     &__content-container {
         padding: 15px;
@@ -62,7 +59,7 @@
         &__content-container {
             order: 2;
             flex: 1 1 auto;
-            width: 45.3%;
+            width: 50%;
             height: 100vh;
             padding: 90px 63px 40px 80px;
         }
@@ -76,7 +73,7 @@
             flex-direction: column;
             align-items: end;
             order: 1;
-            width: 54.7%;
+            width: 50%;
         }
 
         &__image {

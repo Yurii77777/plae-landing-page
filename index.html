@@ -38,6 +38,8 @@
                                 name="email"
                                 class="top-section__input-email form__input-email"
                                 placeholder="Enter email address"
+                                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                                required
                             />
                         </div>
 
@@ -74,31 +76,33 @@
 
             <section class="about-section" id="about-section">
                 <div class="about-section__content-container">
-                    <h2 class="about-section__title secondary-title">About Plae</h2>
-                    <p class="about-section__paragraph">
-                        Previously a Designer for Puma and Adidas, Head Designer
-                        Ryan Ringholz has started a new revolution in kids
-                        trainers. Using technology usually reserved for elite
-                        athletes, Plae creates shoes designed especially for a
-                        child’s foot.
-                    </p>
-                    <p class="about-section__paragraph">
-                        Because kids feet are always growing, their shoes should
-                        accommodate leaving the cartilage and fledgling bone
-                        room to grow its own way. The interchangeable tabs
-                        adjust to accommodate thinner, wider or thicker feet and
-                        nearly all Plae shoes can fit an AFO orthotic brace.
-                    </p>
-                    <p class="about-section__paragraph">
-                        With their dynamic traction, little feet can feel the
-                        ground beneath them and get a grip on it. The rest is
-                        designed to elite athlete standards: super shock
-                        absorption, durable toe guards, and wicking, washable
-                        anti-microbial inserts.
-                    </p>
-                    <p class="about-section__paragraph">
-                        With every shoe, Plae sources responsible, recycled, and non-toxic materials, and makes sure manufacturing and labour is fair and child-free.
-                    </p>
+                    <div class="about-section__limiter">
+                        <h2 class="about-section__title secondary-title">About Plae</h2>
+                        <p class="about-section__paragraph">
+                            Previously a Designer for Puma and Adidas, Head Designer
+                            Ryan Ringholz has started a new revolution in kids
+                            trainers. Using technology usually reserved for elite
+                            athletes, Plae creates shoes designed especially for a
+                            child’s foot.
+                        </p>
+                        <p class="about-section__paragraph">
+                            Because kids feet are always growing, their shoes should
+                            accommodate leaving the cartilage and fledgling bone
+                            room to grow its own way. The interchangeable tabs
+                            adjust to accommodate thinner, wider or thicker feet and
+                            nearly all Plae shoes can fit an AFO orthotic brace.
+                        </p>
+                        <p class="about-section__paragraph">
+                            With their dynamic traction, little feet can feel the
+                            ground beneath them and get a grip on it. The rest is
+                            designed to elite athlete standards: super shock
+                            absorption, durable toe guards, and wicking, washable
+                            anti-microbial inserts.
+                        </p>
+                        <p class="about-section__paragraph">
+                            With every shoe, Plae sources responsible, recycled, and non-toxic materials, and makes sure manufacturing and labour is fair and child-free.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="about-section__img-container">
@@ -114,6 +118,7 @@
                         src="./images/about-image-desktop.jpg"
                         alt="Boy on a bike wearing Plae sneakers"
                         class="about-section__image"
+                        loading="lazy"
                     />
                 </div>
             </section>
@@ -621,10 +626,10 @@
                                 type="email"
                                 name="email"
                                 class="footer__input-email form__input-email"
+                                placeholder="Enter email address"
+                                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                                required
                             />
-                            <label for="email" class="footer__label-email form__label-email"
-                                >Enter email address</label
-                            >
                         </div>
 
                         <button type="submit" class="footer__sign-up-button form__sign-up-button">
