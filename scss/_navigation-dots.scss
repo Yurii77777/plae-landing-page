@@ -16,9 +16,14 @@
         box-shadow: 1px 2px 5px $primary-shadow-color;
     }
 
+    &__dot:hover,
+    &__dot:focus,
+    &__dot:active {
+        background-color: $primary-button-bg-clr-hover;
+    }
+
     &__dot.active {
         width: 14px;
         height: 14px;
-        background-color: $primary-button-bg-clr;
     }
 }

@@ -1,0 +1,12 @@
+.primary-quotes.open,
+.primary-quotes.close {
+    display: block;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAPBAMAAADjSHnWAAAAMFBMVEUAAADc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3NwbTtBvAAAAD3RSTlMA7neqM93MiFURIplmu0SLaheBAAAAgklEQVQI1yXO2xXBYBBF4RFLXJcWogM6oAM6oAQd0AE60IESlKAVuScPWTsn/8zDfI/7mNkCTs5FRLBzriKGjZjAXRzh4DzFltR0N8qBM91AQq6/hlrMIBNTaMQSCjGCVrzgLx4e/3n86/F9iM8TxQUhviLEI/E2GxPisfOByncp3gMEOlP+rYztNgAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 15px;
+}
+
+.primary-quotes.close {
+    transform: rotate(180deg);
+}
