@@ -1,28 +1,20 @@
 .carousel-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     margin-bottom: 25px;
     position: relative;
 
-    &__product-name {
-        font-family: "Nunito";
-        font-weight: 300;
-    }
-
     &__title {
-        text-align: center;
+        margin: 6.7% 0 1.5% 3.5%;
     }
 
     &__subtitle {
-        font-family: "Yantramanav";
-        font-size: $s-paragraph-fs;
-        line-height: 1.2;
-        text-align: center;
+        font-size: calc(14px + 4 * (100vw / 1280));
+        margin: 0 0 6% 4.5%;
     }
 
     &__list {
         padding: 0 25px;
+        margin-left: 1%;
     }
 
     &__item {
@@ -40,23 +32,25 @@
         display: flex;
         flex-direction: column;
         height: 360px;
-        margin-bottom: 15px;
+        margin-bottom: 13%;
     }
 
     &__image {
         max-height: 360px;
         margin: auto 0;
-        // max-width: 466px;
+        max-width: 100%;
     }
 
     &__product-name {
-        font-size: $ml-paragraph-fs;
-        margin-bottom: 15px;
+        font-family: "Nunito";
+        font-weight: 300;
+        font-size: calc(22px + 2 * (100vw / 1280));
+        margin: 0 0 6.5% 1%;
     }
 
     &__slide-number {
-        font-family: "Yantramanav";
-        font-size: $xs-paragraph-fs;
+        font-size: calc(15px + 3 * (100vw / 1280));
+        padding-left: 1%;
     }
 
     &__prev-slide-button,
@@ -67,7 +61,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        top: 18.6em;
+        top: 50%;
         width: 38px;
         height: 38px;
         border-radius: 50%;
@@ -78,11 +72,11 @@
     }
 
     &__prev-slide-button {
-        left: 1%;
+        left: 5%;
     }
 
     &__next-slide-button {
-        right: 1%;
+        right: 5%;
     }
 
     &__prev-slide-button:hover,
@@ -115,125 +109,25 @@
 
 @media (min-width: 576px) {
     .carousel-section {
-        &__title {
-            margin: 20px 0;
-        }
-
         &__image {
             max-width: 466px;
-        }
-
-        &__prev-slide-button,
-        &__next-slide-button {
-            top: 20.6em;
-        }
-
-        &__prev-slide-button {
-            left: 1.6em;
-        }
-
-        &__next-slide-button {
-            right: 1.6em;
         }
     }
 }
 
 @media (min-width: 768px) {
     .carousel-section {
-
-        &__title {
-            margin: 80px 0 17px 144px;
-        }
-
-        &__subtitle {
-            font-size: $s-paragraph-fs;
-            margin: 0 0 75px 128px;
-        }
-
-        &__list {
-            margin-left: 40px;
-        }
-
-        &__img-container {
-            margin-bottom: 30px;
-        }
-
-        &__product-name {
-            margin: 0 0 25px 5px;
-        }
-
         &__prev-slide-button,
         &__next-slide-button {
-            top: 30em;
+            top: 56.5%;
         }
 
         &__prev-slide-button {
-            left: 7.6em;
+            left: 16.5%;
         }
 
         &__next-slide-button {
-            right: 5.6em;
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    .carousel-section {
-        &__subtitle {
-            margin: 0 0 75px 168px;
-        }
-
-        &__list {
-            margin-left: 90px;
-        }
-
-        &__img-container {
-            margin-bottom: 50px;
-        }
-
-        &__product-name {
-            font-size: $l-paragraph-fs;
-            margin: 0 0 25px 5px;
-        }
-
-        &__slide-number {
-            font-size: $s-paragraph-fs;
-        }
-
-        &__prev-slide-button {
-            left: 14.6em;
-        }
-
-        &__next-slide-button {
-            right: 8.6em;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .carousel-section {
-        &__list {
-            margin-left: 110px;
-        }
-
-        &__img-container {
-            margin-bottom: 58px;
-        }
-
-        &__product-name {
-            margin: 0 0 31px 5px;
-        }
-
-        &__slide-number {
-            margin-left: 10px;
-        }
-
-        &__prev-slide-button {
-            left: 19.6em;
-        }
-
-        &__next-slide-button {
-            right: 10.6em;
+            right: 15.5%;
         }
     }
 }

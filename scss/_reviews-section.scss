@@ -22,15 +22,13 @@
     }
 
     &__paragraph {
-        font-size: calc(14px + 6 * (100vw / 1280));
-        letter-spacing: 0.7px;
-        line-height: clamp(1.2, 1.5, 1.5);
-        text-align: center;
         padding: 0 2% 0 10%;
         margin-bottom: -2%;
     }
 
     &__paragraph:last-child {
+        font-size: calc(12px + 6 * (100vw / 1280));
+        padding: 0 2% 0 4%;
         margin-bottom: 0;
     }
 

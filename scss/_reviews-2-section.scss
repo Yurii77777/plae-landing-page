@@ -17,16 +17,13 @@
     }
 
     &__paragraph {
-        font-size: calc(14px + 6 * (100vw / 1280));
-        letter-spacing: 0.7px;
-        line-height: clamp(1.2, 1.5, 1.5);
-        text-align: center;
         padding: 0 11%;
         margin-bottom: -1%;
     }
 
     &__paragraph:last-child {
-        padding: 5% 4% 0 0%;
+        font-size: calc(12px + 6 * (100vw / 1280));
+        padding: 6% 6% 0 0%;
     }
 
     &__quotes-close {
@@ -35,7 +32,7 @@
 
     &__image {
         width: 100%;
-        aspect-ratio: 1/1.29;
+        aspect-ratio: 1/1.289;
     }
 }
 
