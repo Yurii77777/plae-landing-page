@@ -1,48 +1,40 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex-column-spc-btwn;
     background-color: $primary-footer-bg-clr;
     padding-top: 30px;
 
     &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-column-spc-btwn;
+        min-width: 80%;
+        max-width: 508px;
     }
 
     &__title {
         font-family: "Nunito";
-        font-size: $xxxs-title-fs;
+        font-size: calc(12px + 18 * (100vw / 1280));
         font-weight: 300;
         letter-spacing: 0.7px;
-    }
-
-    &__title,
-    &__paragraph {
-        margin-bottom: 15px;
-        text-align: center;
+        margin: 5% 0 3% 4%;
     }
 
     &__paragraph {
-        font-family: "Yantramanav";
-        font-size: $s-paragraph-fs;
-        line-height: 1.2;
+        font-size: calc(10px + 12 * (100vw / 1280));
+        margin: 0 0 10% 4%;
     }
 
     &__form {
-        width: 80%;
-        margin-bottom: 20px;
+        width: 93%;
+        margin: 0 0 23% 9%;
     }
 
     &__copyright {
         display: flex;
         flex-direction: row;
         align-items: center;
-        font-family: 'Yantramanav';
         font-size: $xxs-paragraph-fs;
         text-align: center;
+        align-self: flex-start;
+        width: 100%;
         letter-spacing: 0.5px;
         background-color: $primary-copyright-bg-clr;
         color: $primary-copyright-clr;
@@ -53,20 +45,11 @@
 
 @media (min-width: 768px) {
     .footer {
-        height: 300px;
-        padding: 40px 0 0 0;
+        height: 448px;
+        padding-top: 10%;
 
         &__container {
-            flex: 1 1 auto;
-        }
-
-        &__form {
-            margin-bottom: 70px;
-        }
-
-        &__copyright {
-            height: 30px;
-            padding: 5px 20px;
+            min-width: 55%;
         }
     }
 }
@@ -74,28 +57,26 @@
 @media (min-width: 992px) {
     .footer {
         width: 100vw;
-        height: 448px;
         padding-top: 103px;
         margin-left: calc(50% - 50vw);
 
-        &__title {
-            font-size: $xs-title-fs;
-            margin: 29px 0 -8px 120px;
-        }
-
-        &__paragraph {
-            font-size: $ml-paragraph-fs;
-            margin: 0 0 22px 124px;
-        }
-
-        &__form {
-            margin: 0 0 117px 137px;
+        &__container {
+            min-width: 500px;
         }
 
         &__copyright {
             height: 40px;
-            padding: 10px 7em;
+            padding: 0% 3.5%;
             text-align: start;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .footer {
+        &__container {
+            min-width: 550px;
+            max-width: 550px;
         }
     }
 }
