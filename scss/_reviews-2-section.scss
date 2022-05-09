@@ -1,120 +1,65 @@
 .reviews-2-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-column-spc-btwn;
 
     &__content-container {
-        padding: 15px;
+        @include flex-column-spc-btwn;
         overflow: hidden;
+        padding: 5% 0;
+    }
+
+    &__limiter {
+        width: 58%;
+    }
+
+    &__quotes-open {
+        margin-bottom: 7%;
+        padding: 14% 0 0 4%;
     }
 
     &__paragraph {
-        font-family: "Yantramanav";
-        font-size: $s-paragraph-fs;
-        line-height: 1.2;
+        font-size: calc(14px + 6 * (100vw / 1280));
+        letter-spacing: 0.7px;
+        line-height: clamp(1.2, 1.5, 1.5);
         text-align: center;
-        font-style: normal;
-        font-weight: 300;
-        margin-bottom: 15px;
+        padding: 0 11%;
+        margin-bottom: -1%;
     }
 
-    &__quotes {
-        font-family: "Nunito";
-        font-weight: 300;
-        font-size: $xxl-paragraph-fs;
-        color: $primary-quotes-clr;
+    &__paragraph:last-child {
+        padding: 5% 4% 0 0%;
     }
 
-    &__quotes.close {
-        text-align: end;
-        margin: 40px 0 53px 297px;
+    &__quotes-close {
+        margin: 0 0 16% 91%;
     }
 
     &__image {
         width: 100%;
-        max-height: 802px;
-        height: 802px;
+        aspect-ratio: 1/1.29;
     }
 }
 
 @media (min-width: 576px) {
     .reviews-2-section {
-        &__content-container {
-            padding: 40px;
+        &__img-container {
+            width: 100%;
+            max-width: 610px;
         }
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
     .reviews-2-section {
         flex-direction: row;
 
         &__content-container {
-            flex: 1 1 auto;
-            width: 54.7%;
-            height: 100vh;
-            padding: 90px 63px 40px 80px;
-        }
-
-        &__paragraph {
-            margin-top: -16px;
-            line-height: 1.45;
-            letter-spacing: 1px;
-            padding: 0 20px;
-        }
-
-        &__quotes.close {
-            margin: 35px 0 0px 225px;
+            flex: 1 0 0;
+            padding: 0;
         }
 
         &__img-container {
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            order: 1;
-            width: 45.3%;
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    .reviews-2-section {
-        &__content-container {
-            padding: 254px 95px 10px 95px;
-        }
-
-        &__paragraph {
-            font-size: $m-paragraph-fs;
-        }
-
-        &__paragraph:last-child {
-            font-size: $s-paragraph-fs;
-        }
-
-        &__quotes {
-            margin-top: 8px;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .reviews-2-section {
-        &__content-container {
-            padding: 259px 125px 10px 175px;
-        }
-
-        &__paragraph {
-            margin-top: -25px;
-            padding: 0px 45px;
-        }
-
-        &__paragraph:last-child {
-            margin: 31px 0 0 -17px;
-        }
-
-        &__quotes.close {
-            margin: -20px -4px 0px 225px;
+            width: 49.2%;
+            max-width: 100%;
         }
     }
 }
