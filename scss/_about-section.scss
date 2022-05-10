@@ -29,9 +29,18 @@
         margin-bottom: 0;
     }
 
-    &__image {
+    &__img-container {
         width: 100%;
         aspect-ratio: 1/1.289;
+        background-color: #c6d3f1;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        aspect-ratio: inherit;
     }
 }
 
