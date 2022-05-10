@@ -74,9 +74,11 @@
 
 @media (min-width: 1400px) {
     .footer {
+        padding-top: 90px;
+
         &__container {
-            min-width: 550px;
-            max-width: 550px;
+            width: 600px;
+            max-width: 600px;
         }
     }
 }
