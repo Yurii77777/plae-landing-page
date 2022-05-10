@@ -51,14 +51,12 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .why-plae-section {
         width: 100vw;
+        height: 795px;
         margin-top: 84px;
-        background-image: url("../images/why-desktop-image.webp");
-        background-repeat: no-repeat;
-        background-position: 53% 134%;
-        background-size: 84% 103%;
+        margin-left: calc(50% - 50vw);
 
         &__subtitle {
             padding: 0 0 3.3% 4%;
@@ -68,30 +66,10 @@
         &__content-container {
             flex-direction: row;
             align-items: flex-start;
-            width: 88%;
-        }
-
-        &__left-side,
-        &__rigth-side {
-            display: block;
-            width: 25%;
-            margin: 0;
-        }
-
-        &__mobile-image {
-            display: none;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .why-plae-section {
-        height: 795px;
-        margin-left: calc(50% - 50vw);
-        background-position: 53% 0%;
-        background-size: 108% 100%;
-
-        &__content-container {
+            background-image: url("../images/why-desktop-image.webp");
+            background-repeat: no-repeat;
+            background-position: 40% 104%;
+            background-size: 108% 108%;
             width: 1170px;
             height: 690px;
             padding-left: 1%;
@@ -99,21 +77,17 @@
 
         &__left-side,
         &__rigth-side {
+            display: block;
             width: 20%;
+            margin: 0;
         }
 
         &__rigth-side {
             padding-top: 1.8%;
         }
-    }
-}
 
-@media (min-width: 1400px) {
-    .why-plae-section {
-        background-size: 92% 100%;
-
-        &__rigth-side {
-            padding-top: 0;
+        &__mobile-image {
+            display: none;
         }
     }
 }
