@@ -31,8 +31,9 @@
 
     &__img-container {
         width: 100%;
-        aspect-ratio: 1/1.289;
         background-color: #c6d3f1;
+        padding-bottom: 125%;
+        overflow: hidden;
     }
 
     &__image {
@@ -40,7 +41,6 @@
         top: 0;
         left: 0;
         width: 100%;
-        aspect-ratio: inherit;
     }
 }
 
@@ -48,7 +48,8 @@
     .about-section {
         &__img-container {
             width: 100%;
-            max-width: 610px;
+            max-width: 65%;
+            padding-bottom: 81%;
         }
     }
 }
@@ -68,6 +69,11 @@
         &__img-container {
             width: 49.2%;
             max-width: 100%;
+            padding-bottom: 63.5%;
+        }
+        
+        &__image {
+            transform: scale(1.1);
         }
     }
 }
