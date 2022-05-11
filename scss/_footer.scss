@@ -33,6 +33,7 @@
         align-items: center;
         font-size: $xxs-paragraph-fs;
         text-align: center;
+        font-weight: 400;
         align-self: flex-start;
         width: 100%;
         letter-spacing: 0.5px;
@@ -66,6 +67,7 @@
 
         &__copyright {
             height: 40px;
+            min-height: 40px;
             padding: 0% 3.5%;
             text-align: start;
         }
