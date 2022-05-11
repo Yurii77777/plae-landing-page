@@ -12,11 +12,11 @@
     }
 
     &__quotes-open {
-        margin: 17% 0 0% 3%;
+        margin: 14% 0 0% 3%;
     }
 
     &__paragraph {
-        padding: 8% 11% 0%;
+        padding: 7% 11% 0%;
         margin-bottom: 2%;
     }
 
@@ -26,7 +26,7 @@
     }
 
     &__quotes-close {
-        margin: -3% 0 3% 90%;
+        margin: -5% 0 6% 92%;
     }
 
     &__img-container {
@@ -59,12 +59,15 @@
         flex-direction: row;
 
         &__content-container {
-            flex: 1 0 0;
             padding: 0;
         }
 
+        &__content-container,
         &__img-container {
-            width: 49.2%;
+            width: 50%;
+        }
+
+        &__img-container {
             max-width: 100%;
             padding-bottom: 63.5%;
         }

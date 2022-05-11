@@ -8,21 +8,21 @@
     }
 
     &__limiter {
-        width: 59%;
+        width: 58%;
     }
 
     &__title {
         text-align: center;
-        padding: 4% 0 0 6%;
-        margin-bottom: 22%;
+        padding: 2% 0 0 9%;
+        margin-bottom: 20%;
     }
 
     &__quotes-open {
-        margin: 0 0 7% 6%;
+        margin: 0 0 8% 7%;
     }
 
     &__paragraph {
-        padding: 0 2% 0 10%;
+        padding: 0 1% 0 11%;
         margin-bottom: -1%;
     }
 
@@ -33,7 +33,7 @@
     }
 
     &__quotes-close {
-        margin: 0 0 23% 97%;
+        margin: -2% 0 23% 97%;
     }
 
     &__img-container {
@@ -67,13 +67,16 @@
 
         &__content-container {
             order: 2;
-            flex: 1 0 0;
             padding: 0;
+        }
+
+        &__content-container,
+        &__img-container {
+            width: 50%;
         }
 
         &__img-container {
             order: 1;
-            width: 50.9%;
             max-width: 100%;
             padding-bottom: 63.5%;
         }
