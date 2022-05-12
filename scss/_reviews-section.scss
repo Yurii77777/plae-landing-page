@@ -53,16 +53,14 @@
 
 @media (min-width: 576px) {
     .reviews-section {
-        &__img-container {
-            width: 100%;
-            max-width: 65%;
-            padding-bottom: 81%;
-        }
+        width: 65%;
+        margin: 0 auto;
     }
 }
 
 @media (min-width: 960px) {
     .reviews-section {
+        width: 100%;
         flex-direction: row;
 
         &__content-container {
